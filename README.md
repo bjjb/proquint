@@ -26,7 +26,7 @@ Or install it yourself as:
     require 'proquint'
     Proquint.encode(1)                  #=> "babad"
     Proquint.encode(1234567890123456)   #=> "babah-karij-gufap-rorab"
-    Proquint.encode(0x)                 #=> "babah-karij-gufap-rorab"
+    Proquint.encode(0x462d53c8abac0)    #=> "babah-karij-gufap-rorab"
     Proquint.encode(0x1234567890abcdef) #=> "damuh-jinum-nafor-suloz"
     Proquint.decode("nobol-gonad")      #=> [38951, 14913]
     Proquint.words2num([38951, 14913])  #=> 2552707649
