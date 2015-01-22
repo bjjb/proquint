@@ -9,6 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["JJ Buckley"]
   spec.email         = ["jj@bjjb.org"]
   spec.summary       = %q{Readable, spellable, pronounceable identifiers}
+  spec.description   = <<-DESC
+A proquint is a readable, spellable, pronouncable identifier that can be
+encoded back to a number. See http://arxiv.org/html/0901.4016.
+  DESC
   spec.homepage      = "http://bjjb.github.io/proquint"
   spec.license       = "MIT"
 
