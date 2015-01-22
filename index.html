@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Proquint by bjjb</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Proquint</h1>
+        <p>Ruby implementation of readable, spellable, pronounceable identifiers</p>
+
+        <p class="view"><a href="https://github.com/bjjb/proquint">View the Project on GitHub <small>bjjb/proquint</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/bjjb/proquint/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bjjb/proquint/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bjjb/proquint">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="proquint" class="anchor" href="#proquint" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proquint</h1>
+
+<p>A library for converting numbers to readable, pronounceable, spellable
+identifiers.</p>
+
+<p>See <a href="http://arxiv.org/html/0901.4016">http://arxiv.org/html/0901.4016</a>.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s1"><span class="pl-pds">'</span>proquint<span class="pl-pds">'</span></span></pre></div>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install proquint
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>require 'proquint'
+Proquint.encode(1)                  #=&gt; "babad"
+Proquint.encode(1234567890123456)   #=&gt; "babah-karij-gufap-rorab"
+Proquint.encode(0x462d53c8abac0)    #=&gt; "babah-karij-gufap-rorab"
+Proquint.encode(0x1234567890abcdef) #=&gt; "damuh-jinum-nafor-suloz"
+Proquint.decode("nobol-gonad")      #=&gt; [38951, 14913]
+Proquint.words2num([38951, 14913])  #=&gt; 2552707649
+</code></pre>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it ( <a href="https://github.com/%5Bmy-github-username%5D/proquint/fork">https://github.com/[my-github-username]/proquint/fork</a> )</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create a new Pull Request</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bjjb">bjjb</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-21368073-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
