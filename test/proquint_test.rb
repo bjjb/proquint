@@ -36,7 +36,7 @@ describe Proquint do
   end
 
   it "can encode strings" do
-    Proquint.encode("Hello").must_equal 'badam-badoj-bados-bados-badoz-babos'
+    Proquint.encode("Hello").must_equal 'badam-badoj-bados-bados-badoz'
   end
 
   it "can encode and decode IP addresses" do
