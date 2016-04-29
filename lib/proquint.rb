@@ -21,6 +21,10 @@ module Proquint
   DQUAD_PATTERN = /^(\d{1,3}).(\d{1,3}).(\d{1,3}).(\d{1,3})$/
   HEX_PATTERN = /^x(\h+)$/
 
+  def str2words(string)
+    string.bytes
+  end
+
   def dquad2hex(dquad)
     if dquad =~ DQUAD_PATTERN
       i = (($1.to_i << 24) + ($2.to_i << 16) + ($3.to_i << 8) + $4.to_i)

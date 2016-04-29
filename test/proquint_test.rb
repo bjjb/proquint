@@ -35,6 +35,10 @@ describe Proquint do
     Proquint.encode(0x1234567890abcdef).must_equal 'damuh-jinum-nafor-suloz'
   end
 
+  it "can encode strings" do
+    Proquint.encode("Hello").must_equal 'badam-badoj-bados-bados-badoz-babos'
+  end
+
   it "can encode and decode IP addresses" do
     Proquint.encode("192.168.1.1").must_equal "safom-bahad"
     Proquint.decode("safom-bahad").must_equal [49320, 257]
